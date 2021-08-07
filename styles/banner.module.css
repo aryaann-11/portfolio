@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
+
+.bannerimage{
+    border-radius: 10000px;
+}
+
+.name{
+    font-family: 'Vollkorn',serif;
+    font-size : 100px;
+    color: #07133d;
+}
+
+.intro{
+    font-size : 20px;
+    color :  #07133d ;
+}

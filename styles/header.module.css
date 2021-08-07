@@ -1,0 +1,18 @@
+.btn_blue{
+    background-color:  #07133d;
+    color : white;
+}
+
+.btn_blue:hover{
+    color :white;
+    transform: scale(1.5) perspective(1px);
+    transition-property: transform ;
+  /* transition-timing-function: ease-in-out; */
+  transition-duration: 1s;
+}
+
+.btn_blue:active{
+    transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
