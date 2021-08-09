@@ -7,6 +7,9 @@ import client from "../client"
 export default function Home({ skills }) {
   return (
     <>
+      <Head>
+        <title>Aryan Chatterjee</title>
+      </Head>
       <Header />
       <Banner />
       <Skills skills={skills} />
