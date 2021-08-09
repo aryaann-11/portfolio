@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   eslint: { ignoreDuringBuilds: true },
-  assetPrefix: '/',
-  basePath: '/'
+  assetPrefix: '/portfolio',
+  basePath: '/portfolio'
 }
