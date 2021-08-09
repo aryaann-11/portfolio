@@ -1,3 +1,10 @@
 .skills_container{
+    /* background-color: #d2e9ec; */
     background-color: white;
+}
+.skill_card{
+    opacity : 90%
+}
+.skill_card:hover{
+    opacity: 100%;
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../styles/skills.module.css"
-export default function Skills() {
+export default function Skills({ skills }) {
     return (
         <>
             <div className={`container-fluid mt-5 ${styles.skills_container}`}>
@@ -9,40 +9,26 @@ export default function Skills() {
                         <h1 className="mt-5">Skills</h1>
                     </div>
                 </div>
-                <div className="row justify-content-center">
-                    <div className="col-4 d-flex justify-content-center">
-                        <div className="card" style={{ width: '300px', height: '300px' }}>
-                            <img src="react-logo.png" className="card-img-top"
-                                alt="skilled in react" style={{ width: '300px', height: '200px' }} />
-                            <div className="card-body">
-                                <p className="card-text">
-                                    Skilled react developer with multiple projects under my belt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-4 d-flex justify-content-center">
-                        <div className="card" style={{ width: '300px', height: '300px' }}>
-                            <img src="next-logo.jpg" className="card-img-top"
-                                alt="skilled in next js" style={{ width: '300px', height: '200px' }} />
-                            <div className="card-body">
-                                <p className="card-text">
-                                    Skilled react developer with multiple projects under my belt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-4 d-flex justify-content-center">
-                        <div className="card" style={{ width: '300px', height: '300px' }}>
-                            <img src="bootstrap-logo.png" className="card-img-top"
-                                alt="skilled in bootstrap" style={{ width: '300px', height: '200px' }} />
-                            <div className="card-body">
-                                <p className="card-text">
-                                    Skilled react developer with multiple projects under my belt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                <div className="row mt-5 justify-content-center">
+                    {
+                        skills.map((skill) => {
+                            return (
+                                <>
+                                    <div className="col-4 mb-5 d-flex justify-content-center">
+                                        <div className={`card ${styles.skill_card}`} style={{ width: '310px', height: '350px' }}>
+                                            <img src={skill.image_url} className="card-img-top"
+                                                alt={skill.title} style={{ width: '310px', height: '200px' }} />
+                                            <div className="card-body">
+                                                <p className="card-text">
+                                                    {skill.description}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </>

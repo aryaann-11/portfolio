@@ -7,7 +7,7 @@ export default function Banner() {
             <div className="container mt-5">
                 <div className="row justify-content-around">
                     <div className="col-4">
-                        <img src="banner_image.jpeg" alt="banner image"
+                        <img src="banner-image.jpeg" alt="banner image"
                             className={` img-fluid ${styles.bannerimage}`} />
                     </div>
                     <div className="col-4">
