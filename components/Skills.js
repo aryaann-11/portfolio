@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "../styles/skills.module.css"
-import Image from "next/image"
 export default function Skills({ skills }) {
     return (
         <>
@@ -17,7 +16,7 @@ export default function Skills({ skills }) {
                                 <>
                                     <div className="col-4 mb-5 d-flex justify-content-center">
                                         <div className={`card ${styles.skill_card}`} style={{ width: '310px', height: '350px' }}>
-                                            <Image src={skill.image_url} className="card-img-top"
+                                            <img src={skill.image_url} className="card-img-top"
                                                 alt={skill.title} style={{ width: '310px', height: '200px' }} />
                                             <div className="card-body">
                                                 <p className="card-text">

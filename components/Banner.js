@@ -1,14 +1,13 @@
 import React from "react"
 // import bannerImage from "../public/banner_image.jpeg"
 import styles from "../styles/banner.module.css"
-import Image from "next/image"
 export default function Banner() {
     return (
         <>
             <div className="container mt-5">
                 <div className="row justify-content-around">
                     <div className="col-4">
-                        <Image src="banner-image.jpeg" alt="banner image"
+                        <img src="banner-image.jpeg" alt="banner image"
                             className={` img-fluid ${styles.bannerimage}`} />
                     </div>
                     <div className="col-4">
