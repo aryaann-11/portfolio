@@ -19,6 +19,7 @@ export default function Process({ stages }) {
                                         <div className={`mx-auto mb-3 ${styles.numberCircle}`}>{stage.stageNumber}</div>
                                         <h5 className="fw-bold">{stage.title}</h5>
                                         <img src={stage.image_url} alt={stage.title} className={styles.stage_image} />
+                                        <p>{stage.description}</p>
                                     </div>
                                 </>
                             )
