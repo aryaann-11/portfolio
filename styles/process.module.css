@@ -25,3 +25,12 @@
     color : #56f732;
     border-color :  #56f732 ;
 }
+.stage_image{
+    border-radius: 50%;
+    width : 120px;
+    height : 120px;
+    border : 1px solid #f70757;
+}
+.stage_image:hover{
+    border-color :  #56f732 ;
+}
