@@ -3,6 +3,8 @@ import React from "react"
 import Banner from "../components/Banner"
 import Header from "../components/Header"
 import Skills from "../components/Skills"
+import Case from "../components/Case"
+import Process from "../components/Process"
 import client from "../client"
 export default function Home({ skills }) {
   return (
@@ -13,6 +15,8 @@ export default function Home({ skills }) {
       <Header />
       <Banner />
       <Skills skills={skills} />
+      <Case />
+      <Process />
     </>
   )
 }

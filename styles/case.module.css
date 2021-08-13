@@ -1,0 +1,52 @@
+.text_light_blue{
+    color : #d2e9ec
+}
+.dark_bg{
+    background-color: #07133d
+}
+
+
+
+.timeline li
+{
+  position: relative;
+   height: 3em;
+}
+
+.timeline li:before
+{
+    content: "";
+    display: inline-block;
+    height: 3em;
+    width: 1px;
+    background: #aaaa;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -11px;
+    top: -0.4em;
+    z-index: -1;
+}
+
+.timeline:before
+{
+  content: "●";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -1em;
+  top: 0.1em;
+}
+
+.timeline:after
+{
+  content: "●";
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -1em;
+  top: -1em;
+}
+
